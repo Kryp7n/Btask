@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  navItems = ["Tasks","Completed","Missed","Create"]
+  selectedItem = 0;
+
+  setActive(data: number){
+    this.selectedItem = data;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
